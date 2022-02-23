@@ -1,0 +1,472 @@
+
+@font-face {
+  font-family: Yekan;
+  src: url('../font/Yekan.eot');
+  src: url('../font/Yekan.eot?#iefix') format('Yekan-opentype'),
+       url('../font/Yekan.woff') format('woff'),
+       url('../font/Yekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Yekan;
+
+}
+ .header{
+     display: flex;
+     flex-wrap: wrap;
+ }
+.menue{
+    display: flex;
+    flex-wrap: wrap;
+     flex-direction: row;
+    justify-items: baseline;
+    flex-basis: 100%;
+}
+
+.menue div{
+    display: flex;
+    background-color: #1225a5;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.time{
+    flex-grow: 1;
+    order: 4;
+}
+.call{
+    flex-grow: 1;
+    order: 3;
+}
+.location{
+    flex-grow: 2;
+    order: 2;
+}
+.emailbar{
+
+    flex-grow: 2;
+    order: 1;
+}
+.icone{
+    margin: 7px;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration:none;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #edf0e7;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;
+    top: 0px;
+    position: sticky;
+    z-index: 100;
+}
+.bergermenue{
+    display: none;
+
+}
+
+.logo{
+    display: flex;
+    margin: 6px 0px;
+    order: 2;
+}
+.menubar{
+    display: flex;
+    order: 1;
+    list-style-type: none;
+
+}
+.menubar li{
+    margin: 0px 26px;
+    cursor: pointer;
+
+}
+.menubar li:hover{
+   color: #0000d3;
+
+}
+
+.slid{
+    position: relative;
+    display: flex;
+    background-image: url("../img/slid.png");
+    background-size: cover;
+    width: 100vw;
+    height: 27pc;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    color: #edf0e7;
+}
+
+.slid::before{
+    content: "";
+    background-color: #3535a58a;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+
+}
+.slid h1,p{
+    position: relative;
+}
+.slid > p:hover{
+    color: white;
+
+}
+.slid button{
+    position: relative;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 25px;
+}
+.buttomheader{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.showmnue{
+    background-color: deeppink;
+    color: #edf0e7;
+}
+
+.rezerv{
+    background-color: #edf0e7;
+    color: deeppink;
+}
+.slid button:hover{
+    width: 130px;
+    transition-duration:1s;
+    opacity: 1;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;}
+.khadamat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.khadamat_pic{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.khadamat_pic div{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4ecf0;
+    width: 20%;
+    height: 380px;
+    margin: 14px;
+    text-align: center;
+
+
+}
+
+.brand {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 100vh;
+    width: 86vw;
+    text-align: center;
+    background-color: #f4ecf0;
+    border-radius: 20px;
+       overflow: scroll;
+
+}
+
+.imgbrand img{
+    opacity: 0.3;
+}
+
+.imgbrand img:hover{
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.khadamatdigar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.mainkhadamat img{
+    margin-top: 20px;
+    width: 80vw;
+    border-radius: 20px;
+    opacity: 0.7;
+    transition-duration: 1s;
+
+
+}
+.mainkhadamat img:hover{
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.otherkhadamar{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+
+}
+.otherkhadamar img{
+    order: 2;
+    border-radius: 10px;
+}
+.khaamattext{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.khaamattext button{
+    position: relative;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 25px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery img{
+  margin: 20px;
+    width: 15pc;
+}
+
+.gallerycontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8pc;
+    background-image: url("../img/bg-image-3.jpg");
+    background-attachment: fixed;
+    color: white;
+    border-radius: 20px;
+}
+
+.comment{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 2;
+    justify-content: center;
+}
+.comment div{
+    width: 18pc;
+    margin:30px;
+    padding: 20px;
+    color: #d3d6cd;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #0f1c68;
+}
+.comment img{
+    border-radius: 40px;
+}
+
+.maincomment{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment_buttom {
+    width: 11pc;
+    height: 38px;
+    background-color: #0f1c68;
+    color: #d3d6cd;
+    border: none;
+    font-size: 18px;
+    border-radius: 9px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition-duration: 1s;
+}
+.comment_buttom:hover {
+    opacity: 1;
+        transition-duration: 1s;
+
+}
+
+.footer{
+    background-image:linear-gradient(rgba(0, 2, 169, 0.95), #000036);
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-top: 8pc;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 15pc;
+
+}
+.adress{
+    display: flex;
+    flex-flow: wrap column;
+    color: #dfdfdf;
+    order: 2;
+}
+.socialmedia i{
+    font-size: 40px;
+    color: #dfdfdf;
+    margin-top: 20px;
+}
+
+.socialmedia{
+
+     text-align: center;
+}
+
+.menuetools ul{
+    display: flex;
+    flex-flow: wrap column;
+    color: #dfdfdf;
+
+}
+.menuetools{
+    order: 3;
+
+}
+
+.menubar_1{
+    list-style-type: none;
+
+}
+.menubar_1 li{
+    margin: 0px 26px;
+    cursor: pointer;
+
+}
+
+
+
+
+@media all and (max-width: 800px){
+    .time{
+    flex-grow: 1;
+    order: 1;
+}
+.call{
+    flex-grow: 1;
+    order: 2;
+}
+.location{
+    font-size: 13px;
+    flex-grow: 2;
+    order: 3;
+}
+.emailbar{
+    flex-basis: 100%;
+    flex-grow: 2;
+    order: 4;
+}
+.menubar{
+    flex-direction: column;
+    order: 2;
+    text-align: center;
+    margin: 20px 0px;
+    display: none;
+
+}
+.menubar li{
+    margin: 8px 0px;
+
+}
+.nav{
+   flex-direction: column;
+    position: static;
+
+}
+
+.bergermenue{
+    display: block;
+    order:2;
+    border: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+    width: 30%;
+    font-size: 20px;
+
+
+}
+
+.buttomheader{
+
+    flex-direction: column;
+}
+.khadamat_pic{
+    flex-direction: column;
+}
+.khadamat_pic div{
+    width: 50%;
+    height: 380px;
+    text-align: center;
+
+
+}
+.otherkhadamar{
+    flex-direction: column;
+
+
+}
+.footer{
+    flex-flow:column;
+    height: 28pc;
+}
+.menuetools{
+    display: none;
+}
+.adress{
+    align-items: center;
+}
+
+}
